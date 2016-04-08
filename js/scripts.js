@@ -5,28 +5,18 @@ function Pizza (crust, topping1, topping2, topping3) {
   this.topping3 = topping3;
 }
 
-Pizza.prototype.cost = function() {
-  return Crust[0] + newPizza.length;
-}
-    var Crust = [];
-    var newPizza = [];
 
 $(document).ready(function() {
   $("form#orderForm").submit(function(event) {
     event.preventDefault();
 
-    var inputtedTopping = $("#toppings :selected").val();
+    var newPizza = new Pizza (inputtedCrust, topping1, topping2, topping3);
+
     var inputtedCrust = $('input[name="crust"]:checked').val();
+    var topping1 = $("#topping1 :selected").val();
+    var topping2 = $("#topping2 :selected").val();
+    var topping3 = $("#topping3 :selected").val();
 
-    newPizza.push(inputtedTopping);
-    Crust.push(inputtedCrust);
-    // $(".radio-inline").remove();
-
-    if (newPizza.length >= 3) {
-      $(".form-group").remove();
-      $(".btn-primary").remove();
-    }
-    console.log("pizza Array = " + newPizza);
-    console.log("crust " + Crust);
+    console.log(newPizza);
   });
 });

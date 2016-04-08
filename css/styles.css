@@ -1,0 +1,22 @@
+body {
+  
+}
+
+.jumbotron {
+  text-align: center;
+  font-weight: bold;
+  font-size: 4em;
+}
+
+#logo {
+display: block;
+margin-left: 4.5em;
+}
+
+#crustLabel {
+  margin-left: 30%;
+}
+
+.radio-inline {
+  margin-left: 15%;
+}

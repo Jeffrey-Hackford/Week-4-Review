@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Panucci's Pizza!</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="jumbotron">Welcome to Panucci's Pizza!</h1>
+      <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+          <div>
+            <img src="img/Panucci's.png" alt="Panucci's Piza logo" id="logo">
+          </div>
+          <form class="form-group" id="orderForm">
+
+            <div class="form-group">
+              <label for="crust" id="crustLabel"><h3>Select your crust</h3></label><br>
+                <div class="radio-inline">
+                  <label><input type="radio" name="thin-crust" value="thin">Thin Crust</label>
+                </div>
+                <div class="radio-inline">
+                  <label><input type="radio" name="age-input" value="tossed">Hand Tossed</label>
+                </div>
+                <div class="radio-inline">
+                  <label><input type="radio" name="age-input" value="deep">Deep Dish</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="topping1">Select your toppings:</label>
+                <select type="select" class="form-control" id="toppings">
+                  <option value="Pepperoni">Pepperoni</option>
+                  <option value="Chicken">Chicken</option>
+                  <option value="Olives">Olives</option>
+                  <option value="Peppers">Peppers</option>
+                  <option value="Onions">Onions</option>
+                  <option value="Pineapples">Pineapples</option>
+                  <option value="Extra Cheese">Extra Cheese</option>
+                </select>
+              </div>
+        </div>
+        <div class="col-md-5">
+          <div id="displayOrder">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

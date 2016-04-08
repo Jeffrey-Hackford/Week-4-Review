@@ -1,22 +1,62 @@
-body {
-  
+#topping1 {
+  max-width: 12em;
+  margin-left: 10em;
 }
-
+#topping2 {
+  max-width: 12em;
+  margin-left: 10em;
+}
+#topping3 {
+  max-width: 12em;
+  margin-left: 10em;
+}
+.toppingLabels {
+  margin-left: 10em;
+  color: white;
+}
+#crustLabel {
+  color: white;
+}
+#displayOrder {
+  display: none;
+  text-align: center;
+  color: white;
+  margin-top: 475px;
+}
+form {
+  background: linear-gradient(to top right, black, red);
+  border-radius: 15px;
+  padding-bottom: 20px;
+}
+#placeOrder {
+  margin-left: 11.4em;
+}
+body {
+  background-image: url("http://littlehamptonbrick.com.au/wp-content/uploads/2015/01/littlehamptonbrick.com.au_inside-a-brick-pizza-oven.jpg");
+  background-size: 100%;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
 .jumbotron {
   text-align: center;
   font-weight: bold;
   font-size: 4em;
 }
-
 #logo {
 display: block;
 margin-left: 4.5em;
 }
-
 #crustLabel {
   margin-left: 30%;
 }
-
 .radio-inline {
   margin-left: 15%;
+  color: white;
+}
+#blinking {
+  animation: blinker 4s linear infinite;
+}
+
+@keyframes blinker {
+  50% { opacity: 0.0; }
 }

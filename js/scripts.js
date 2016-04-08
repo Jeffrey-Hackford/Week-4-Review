@@ -22,7 +22,7 @@ $(document).ready(function() {
 
     var totalPrice = newPizza.cost(newPizza);
 
-    console.log(newPizza);
-    console.log(totalPrice);
+    $("#orderTotal").text(totalPrice);
+    $("#displayOrder").show();
   });
 });

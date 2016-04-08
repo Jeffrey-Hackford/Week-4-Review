@@ -16,53 +16,52 @@
             <img src="img/Panucci's.png" alt="Panucci's Piza logo" id="logo">
           </div>
           <form class="form-group" id="orderForm">
-
             <div class="form-group">
-              <label for="crust" id="crustLabel"><h3>Select your crust</h3></label><br>
-                <div class="radio-inline">
-                  <label><input type="radio" name="crust" value="5">Thin Crust</label>
-                </div>
-                <div class="radio-inline">
-                  <label><input type="radio" name="crust" value="6">Hand Tossed</label>
-                </div>
-                <div class="radio-inline">
-                  <label><input type="radio" name="crust" value="8">Deep Dish</label>
-                </div>
+              <label for="crust" id="crustLabel"><h3>Select your crust:</h3></label><br>
+              <div class="radio-inline">
+                <label><input type="radio" name="crust" value="5">Thin Crust</label>
+              </div>
+              <div class="radio-inline">
+                <label><input type="radio" name="crust" value="6">Hand Tossed</label>
+              </div>
+              <div class="radio-inline">
+                <label><input type="radio" name="crust" value="8">Deep Dish</label>
+              </div>
             </div>
-
             <div class="form-group">
-              <label for="topping1">Select your first topping:</label>
-                <select type="select" class="form-control" id="topping1">
-                  <option value="0">-None of these-</option>
-                  <option value="3">Pepperoni</option>
-                  <option value="3">Chicken</option>
-                  <option value="3">Sausage</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="topping1">Select your second topping:</label>
-                  <select type="select" class="form-control" id="topping2">
-                    <option value="0">-None of these-</option>
-                    <option value="1">Olives</option>
-                    <option value="1">Onions</option>
-                    <option value="1">Peppers</option>
-                  </select>
-              </div>
-              <div class="form-group">
-                  <label for="topping1">Select your third topping:</label>
-                    <select type="select" class="form-control" id="topping3">
-                      <option value="0">-None of these-</option>
-                      <option value="2">Pineapples</option>
-                      <option value="2">Strawberries</option>
-                      <option value="1 Cheese">Extra Cheese</option>
-                    </select>
-              </div>
-                <button class="btn btn-primary" type="submit" name="button" id="placeOrder">Add your toppings!</button>
+              <label for="topping1" class="toppingLabels">Select your first topping:</label>
+              <select type="select" class="form-control" id="topping1">
+                <option value="0">-None-</option>
+                <option value="3">Pepperoni</option>
+                <option value="3">Chicken</option>
+                <option value="3">Sausage</option>
+              </select>
             </div>
+            <div class="form-group">
+              <label for="topping1" class="toppingLabels">Select your second topping:</label>
+              <select type="select" class="form-control" id="topping2">
+                <option value="0">-None-</option>
+                <option value="1">Olives</option>
+                <option value="1">Onions</option>
+                <option value="1">Peppers</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="topping1" class="toppingLabels">Select your third topping:</label>
+              <select type="select" class="form-control" id="topping3">
+                <option value="0">-None-</option>
+                <option value="2">Pineapples</option>
+                <option value="2">Strawberries</option>
+                <option value="1 Cheese">Extra Cheese</option>
+              </select>
+            </div>
+            <button class="btn btn-danger" type="submit" name="button" id="placeOrder">Place your order!</button>
           </form>
-        <div class="col-md-5">
+        </div>
+        <div class="col-md-5 col-md-offset-1">
           <div id="displayOrder">
-
+            <h1>Your order is placed!</h1>
+            <h3>Your total is <span id="blinking">$<span id=orderTotal></span>.00</span></h3>
           </div>
         </div>
       </div>

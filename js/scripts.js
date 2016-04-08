@@ -5,6 +5,28 @@ function Pizza (crust, topping1, topping2, topping3) {
   this.topping3 = topping3;
 }
 
-var inputtedTopping1 = parseInt($("#toppings :selected").val());
+Pizza.prototype.cost = function() {
+  return Crust[0] + newPizza.length;
+}
+    var Crust = [];
+    var newPizza = [];
 
-var newPizza = new Pizza
+$(document).ready(function() {
+  $("form#orderForm").submit(function(event) {
+    event.preventDefault();
+
+    var inputtedTopping = $("#toppings :selected").val();
+    var inputtedCrust = $('input[name="crust"]:checked').val();
+
+    newPizza.push(inputtedTopping);
+    Crust.push(inputtedCrust);
+    // $(".radio-inline").remove();
+
+    if (newPizza.length >= 3) {
+      $(".form-group").remove();
+      $(".btn-primary").remove();
+    }
+    console.log("pizza Array = " + newPizza);
+    console.log("crust " + Crust);
+  });
+});

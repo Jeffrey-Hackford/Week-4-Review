@@ -1,0 +1,6 @@
+{
+  "name": "Week-4-review",
+  "tagline": "Week 4 Review. Make a pizza ordering site using constructors and prototypes",
+  "body": "# _Panucci's Pizza_\r\n\r\n#### _Pizza ordering webpage, April 8th, 2016_\r\n\r\n#### By _**Jeffrey Hackford**_\r\n\r\n## Description\r\n\r\n_Webpage that allows users to order a pizza with custom toppings and choice of crusts. It also calculates total cost based on options_\r\n\r\n## Setup/Installation Requirements\r\n\r\n* _Clone from github_\r\n* _Open in any browser for full functionality_\r\n\r\n## Known Bugs\r\n\r\n_No none bugs at this time_\r\n\r\n## Support and contact details\r\n\r\n_Jeffrey.Hackford@gmail.com_\r\n\r\n## Technologies Used\r\n\r\n-Css\r\n-jquery\r\n-javascript\r\n-bootstrap\r\n\r\n### License\r\n\r\n*licensed under MIT*\r\n\r\nCopyright (c) 2016 **_Jeffrey Hackford_**\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
